@@ -1,0 +1,36 @@
+<html>
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+
+</head>
+
+<body>
+
+    <div class="maincontainer">
+        <div class="middle">
+            <p class="type">Encrypting</p>
+            <textarea type="text" id="metn" placeholder="Your Data For Encryptining"></textarea>
+            <a class="button crpyto" onclick="encryptbutton()">Encrypt</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="../bignumber.js"></script>
+<script src="Encrypt.js"></script>
+<script>
+
+function encryptbutton() {
+    let areaveri = document.getElementById("metn").value;
+    plaintext = areaveri;
+    let sonuc = start();
+    document.getElementById("metn").value = sonuc;
+}
+
+</script>
+</html>
